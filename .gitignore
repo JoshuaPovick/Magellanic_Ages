@@ -1,0 +1,15 @@
+############################
+### Ignore the following ###
+############################
+
+# Ignore the following extensions:
+##################################
+
+*.fits
+*.pdf
+*.dat
+*.isc_2mass
+
+# Ignore the following files:
+#############################
+/Users/joshpovick/Desktop/BaSTI/BaSTI/basti_monarch.dat
