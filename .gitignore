@@ -9,8 +9,11 @@
 *.pdf
 *.dat
 *.isc_2mass
+*.txt
+*.iso.cmd
 
 # Ignore the following files:
 #############################
 /Users/joshpovick/Desktop/research/Magellanic_Ages/BaSTI/basti_monarch.dat
 /Users/joshpovick/Desktop/research/Magellanic_Ages//basti_monarch.dat
+/Users/joshpovick/Desktop/research/Magellanic_Ages//basti_rgb.dat
