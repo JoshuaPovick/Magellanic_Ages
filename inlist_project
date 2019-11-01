@@ -1,0 +1,61 @@
+&star_job 
+ 
+  ! begin with a pre-main sequence model 
+    create_pre_main_sequence_model = .true. 
+ 
+  ! save an model at the end of the run 
+    save_model_when_terminate = .false. 
+    save_model_filename = 'final.mod' 
+ 
+/ !end of star_job namelist 
+ 
+&controls 
+ 
+  ! starting specifications 
+    initial_mass = 1 ! in Msun units 
+    initial_z = 0.02d0 
+ 
+  ! use custom z fractions 
+    accretion_zfracs = 0 
+ 
+    z_fraction_li = 1.0d0 
+    z_fraction_be = 0.0d0 
+    z_fraction_c = 0.0d0 
+    z_fraction_n = 0.0d0 
+    z_fraction_o = 0.0d0 
+    z_fraction_f = 0.0d0 
+    z_fraction_ne = 0.0d0 
+    z_fraction_na = 0.0d0 
+    z_fraction_mg = 0.0d0 
+    z_fraction_al = 0.0d0 
+    z_fraction_si = 0.0d0 
+    z_fraction_p = 0.0d0 
+    z_fraction_s = 0.0d0 
+    z_fraction_cl = 0.0d0 
+    z_fraction_ar = 0.0d0 
+    z_fraction_k = 0.0d0 
+    z_fraction_ca = 0.0d0 
+    z_fraction_sc = 0.0d0 
+    z_fraction_ti = 0.0d0 
+    z_fraction_v = 0.0d0 
+    z_fraction_cr = 0.0d0 
+    z_fraction_mn = 0.0d0 
+    z_fraction_fe = 0.0d0 
+    z_fraction_co = 0.0d0 
+    z_fraction_ni = 0.0d0 
+    z_fraction_cu = 0.0d0 
+    z_fraction_zn = 0.0d0 
+
+  ! dump metals into heaviest 
+    accretion_dump_missing_metals_into_heaviest = .true. 
+ 
+  ! options for energy conservation 
+    use_dedt_form_of_energy_eqn = .true. 
+    use_gold_tolerances = .true. 
+ 
+  ! stopping conditions 
+    log_g_lower_limit = 0.0d0 
+    max_age = 1.32d10 
+    stop_at_TP = .true. 
+ 
+/ !end of controls namelist
